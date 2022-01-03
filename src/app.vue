@@ -5,13 +5,7 @@
 </template>
 
 <script>
-import appHeader from './cmps/app-header'
-import userMsg from './cmps/user-msg'
-
 export default {
-  components: {
-    appHeader,
-    userMsg,
-  },
+  components: {},
 }
 </script>

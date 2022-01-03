@@ -22,33 +22,12 @@ export const bugStore = {
   },
   actions: {
     async sendBug(context, { bug }) {
-      console.log('sendBug ~ bug', bug)
       try {
         bug = await bugService.add(bug)
-        console.log('sendBug ~ bug', bug)
         context.commit({ type: 'addBug', bug })
         return bug
       } catch (err) {
         console.log('bugStore: Error in addBug', err)
-        throw err
-      }
-    },
-    async loadBugs(context) {
-      // console.log('loadBugs ~ context', context)
-      try {
-        const bugs = await bugService.query()
-        context.commit({ type: 'setBugs', bugs })
-      } catch (err) {
-        // console.log('bugStore: Error in loadBugs', err)
-        throw err
-      }
-    },
-    async removeBug(context, { bugId }) {
-      try {
-        await bugService.remove(bugId)
-        context.commit({ type: 'removeBug', bugId })
-      } catch (err) {
-        console.log('bugStore: Error in removeBug', err)
         throw err
       }
     },

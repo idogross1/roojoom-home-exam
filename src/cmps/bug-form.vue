@@ -5,8 +5,6 @@
     <textarea class="problem-description-input" v-model="bugToSend.problemDescription" placeholder="Tell us your problem..." rows="4" cols="50"></textarea>
 
     <input class="serial-number-input" type="text" v-model="bugToSend.serialNumber" placeholder="Device serial number:" />
-
-    in
     <h2>Indicators status:</h2>
     <h3>First indicator</h3>
     <div class="btn-container">
