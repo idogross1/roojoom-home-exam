@@ -1,0 +1,17 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    background-color: white;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
+}

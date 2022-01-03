@@ -1,0 +1,16 @@
+.bug-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  input,
+  textarea {
+    border: 0;
+    box-shadow: 0 0.1px 0 0 black;
+  }
+
+  //   textarea {
+  //     border: 0;
+  //     box-shadow: 0 0.1px 0 0 black;
+  //   }
+}
